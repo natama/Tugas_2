@@ -1,5 +1,5 @@
 <?php
-	class Player(){
+	class Player{
 		private $name;
 		private $blood;
 		private $mana;
@@ -44,7 +44,22 @@
 		
 	}
 	
-	class Main(){
+	echo"===========SELAMAT DATANG DI GAME============\n";
+	$name = "";	
+	$posisi = "";	
+	echo "Masukan Nama Player : ";
+	fscanf(STDIN, "%s\n", $name);
+	$player = new Player($name);
+	echo "Pilih Posisi Menyerang Atau Bertahan : ";
+	fscanf(STDIN, "%s\n", $posisi);
+	if($posisi == "Meyerang"){
+		$player->attack();
+	}else{
+		$player->deffend();
+	} 
+	print_r($player);
+	
+	/* class Main(){
 		public $player = [];
 		
 		public function menu(){
@@ -52,7 +67,7 @@
 		}
 	}
 	/* $players["kunto"] = new Player("kunto");
-	$players[cecep] = new Player("cecep");
+		$players[cecep] = new Player("cecep");
 	
 	$players["cecep"]->attach */
 ?>
