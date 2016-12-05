@@ -51,8 +51,8 @@
 		
 		}
 	}
-	$players["kunto"] = new Player("kunto");
+	/* $players["kunto"] = new Player("kunto");
 	$players[cecep] = new Player("cecep");
 	
-	$players["cecep"]->attach
+	$players["cecep"]->attach */
 ?>
